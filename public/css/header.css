@@ -1,0 +1,55 @@
+.header {
+    background: linear-gradient(90deg, #e51cc4, #e51cc491, #e51cc4, #e51cc491, #e51cc4, #e51cc491, #e51cc4);
+    height: 130px;
+    font-family: FuturaNowScript-Bd;
+    color: beige;
+    padding-top: 5px;
+    font-size: 140%;
+}
+
+.header h1 {
+    display: flex;
+    float: left;
+    font-size: 140%;
+}
+
+.lang {
+    float: right;
+    /* font-size: 120%; */
+    margin-right: 30px;
+}
+
+.clear {        
+    clear: both;
+}
+
+#menu nav {
+    justify-items:center;
+    font-family: BadScript;
+}
+
+#menu ul {
+    display: flex;
+}
+
+#menu ul li {
+    display: flex;
+    float: left;
+    margin-right: o;
+}
+
+#menu ul li a {
+    background: linear-gradient(180deg, #6f5cec, #150698);
+    border-radius: 15px;
+    font-size: 120%;
+    cursor: pointer;
+    margin: 12px 20px;
+    padding: 0 20px;
+    text-decoration: none;
+    border: 10px solid transparent;
+}
+
+#menu ul li a:hover {
+    background: linear-gradient(180deg, #150698, #6f5cec);
+    border-color: #ca910d;
+}

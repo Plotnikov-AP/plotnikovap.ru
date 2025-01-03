@@ -1,0 +1,9 @@
+@font-face {                                                                                            
+    font-family: FuturaNowScript-Bd;                                                                             
+    src: url("../fonts/FuturaNowScript-Bd.woff2") format("woff2"), url("../fonts/FuturaNowScript-Bd.woff") format("woff");
+}
+
+@font-face {                                                                                                                                                                                                   
+    font-family: BadScript;                                                                             
+    src: url("../fonts/BadScript.woff2") format("woff2"), url("../fonts/BadScript.woff") format("woff");
+}                                                                                                       
