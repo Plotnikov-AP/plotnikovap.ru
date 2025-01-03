@@ -3,7 +3,6 @@
     <x-slot name="content">
         <x-my-header />
         <div>
-            <!-- Здесь пока только меню! -->
     
         </div> 
     </x-slot>

@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Middleware\LanguageMiddleware;
 
 Route::get('/', function () {
     return redirect()->route('main');
@@ -17,7 +18,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-Route::get('/main', [MainController::class, 'main'])->name('main');
+Route::get('/main', [MainController::class, 'main'])
+->name('main');
+Route::post('/laguage-switch', [MainController::class, 'languageSwitch'])->name('language.switch');
 
 
 require __DIR__.'/auth.php';
