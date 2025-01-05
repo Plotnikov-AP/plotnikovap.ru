@@ -17,8 +17,9 @@ class LanguageMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         $language=session('language');
-        //set the current language
-        app()->setLocale(locale: $language);
+        if (in_array($language, ['en', 'ru'])) {
+            app()->setLocale(locale: $language);
+        }
         return $next($request);
     }
 }
