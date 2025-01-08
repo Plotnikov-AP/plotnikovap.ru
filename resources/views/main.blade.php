@@ -4,6 +4,7 @@
         <x-my-header />
         <div>
     
-        </div> 
+        </div>
+        <x-my-footer /> 
     </x-slot>
 </x-main-layout>

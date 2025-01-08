@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Session;
 class MainController extends Controller
 {
     public function main() {                         
-        // CounterController::setAllCount();            
+        CounterController::setAllCount();            
         // $sliders = Slider::orderBy('id')->get();     
         return view('main');
     } 

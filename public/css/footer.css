@@ -1,0 +1,44 @@
+.footer {
+    height: 10vh;
+}
+
+.statistics {
+    font-size: 120%;
+    color: blue;
+}
+
+.statistics_here {
+    position:fixed;
+    bottom:0;
+    right:0;
+    height: 5vh;
+    width: 15vw;
+    padding: 0 3vw;
+    background-color: burlywood;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.statistics_here:hover {
+    opacity: 0;
+}
+
+.statistics_show {
+    position:fixed;
+    bottom:0;
+    right:0;
+    height: 5vh;
+    width: 15vw;
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 10px;
+    transition-duration: 1s;       
+    transition-timing-function: ease;
+    opacity: 0;
+}
+
+.statistics_show:hover {
+    height: 30vh;
+    width: 30vw;
+    opacity: 1;
+}
