@@ -1,26 +1,33 @@
 .header {
     /* background: linear-gradient(90deg, #e51cc4, #e51cc491, #e51cc4, #e51cc491, #e51cc4, #e51cc491, #e51cc4); */
     background-image: url("../images/background-header.webp");
-    height: 140px;
+    height: 120px;
     font-family: FuturaNowScript-Bd;
     color: #150698;
     padding-top: 5px;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 .header h1 {
     display: flex;
     float: left;
-    /* font-size: 110%; */
+    margin-left: 10px;
+    font-size: 110%;
 }
 
 .languageSelect {
     color: #00f;
     float: right;
     font-family: TimesNewRoman;
-    margin-right: 30px;
+    margin-right: 15px;
     font-weight: bold;
-    height: 45px;
+    height: 40px;
+}
+
+.languageSelect select {
+    height: 35px;
+    font-size: 14px;
+    padding-top:4px;
 }
 
 .clear {        
@@ -51,7 +58,7 @@
     margin: 8px 20px;
     padding: 0 20px;
     text-decoration: none;
-    border: 8px solid transparent;
+    border: 5px solid transparent;
 }
 
 #menu ul li a:hover {

@@ -12,7 +12,10 @@
             </li>                                                                       
             <li>                                                                         
                 <a href="#">{{ __('menu.shop') }}</a>                   
-            </li>                                                                        
+            </li>
+            <li>                                                                         
+                <a href="#">{{ __('menu.contacts') }}</a>                   
+            </li>                                                                       
         </ul>
     </nav>
 </div>      

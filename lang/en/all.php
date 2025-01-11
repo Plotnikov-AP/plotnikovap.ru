@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'languageSelect' => 'Select the site language',
+    'languageSelect' => 'Select the site language: ',
+    'statistics' => 'statistics'
 ];

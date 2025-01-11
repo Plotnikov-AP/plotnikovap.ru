@@ -1,6 +1,6 @@
 <div class="statistics">    
     <div class="statistics_here">
-        <p>Статистика</p>
+        <p>{{ __('all.statistics') }}</p>
     </div>
     <div class="statistics_show">
         сайт посетили: <span id="count-all"></span> раз(а)<br />

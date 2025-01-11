@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use App\Models\Slider;
+
 
 class MainController extends Controller
 {
     public function main() {                         
         CounterController::setAllCount();            
-        // $sliders = Slider::orderBy('id')->get();     
         return view('main');
     } 
 
