@@ -1,4 +1,5 @@
 @import url("fonts.css");
+@import url("reset.css");
 @import url("header.css");
 @import url("main.css");
 @import url("footer.css");
@@ -7,3 +8,103 @@ body {
     padding: 0;
     margin: 0;
 }
+
+/* SLIDER */                                                                
+                                                                            
+#slider {                                                                   
+	background-color: #b4d9e9;                                          
+	color: brown;                                                     
+	padding: 1vw 0 1vw;                                               
+	position: relative;                                                  
+	width: 100vw;                                                        
+	height: 35vh;
+    text-align:justify;                                                       
+}                                                                           
+                                                                            
+#slider h3 {                                                                
+	font-size: 200%;                                                    
+	text-align: center;                                                 
+}                                                                           
+                                                                            
+#slider img {                                                               
+	float: left;                                                        
+	margin-top: 20px;                                                   
+	width: 30vw;                                                       
+}                                                                           
+                                                                            
+#slider .more {                                                             
+	float: right;                                                       
+	margin-right: 20px;                                                 
+	margin-left: 20px;                                                  
+	margin-top: -30px;                                                  
+}                                                                           
+                                                                            
+#slider .more a, #left .course_order .order a, #left .course_order .more a {
+	background-color: #009ee3;                                          
+	font-size: 150%;                                                    
+	color: #fff;                                                        
+	display: inline-block;                                              
+	padding: 10px 20px;                                                 
+	text-decoration: none;                                              
+}                                                                           
+                                                                            
+#slider .more a:hover, #left .course_order .order a:hover {                 
+	background-color: #39c3ff;                                          
+}                                                                           
+                                                                            
+.slider_item p {                                                            
+	margin: 15px 0 0;                                                   
+}                                                                           
+                                                                            
+.slider_content {                                                           
+	font-size: 150%;                                                    
+	margin-left: 33vw;                                                 
+	margin-right: 3vw;                                                 
+	padding-top: 10px;                                                  
+}                                                                           
+                                                                            
+.slider_content p {
+    font-family: TimesNewRoman;                                                        
+	font-style: italic;
+    font-weight: bold;                                                
+	width: 60vw;                                                        
+	-webkit-margin-before: 23px;                                        
+}                                                                           
+                                                                            
+.slider_item {                                                              
+	display: none;                                                      
+}                                                                           
+                                                                            
+.slider_item:first-child {                                                  
+	display: block;                                                     
+}                                                                           
+                                                                            
+#bullets {                                                                  
+	display: -webkit-box;                                               
+	display: -ms-flexbox;                                               
+	display: flex;                                                      
+	-webkit-box-pack: center;                                           
+	-ms-flex-pack: center;                                              
+	justify-content: center;                                            
+	-ms-flex-wrap: wrap;                                                
+	flex-wrap: wrap;                                                    
+	margin: 0 15px;                                                     
+	text-align: center;                                                 
+	padding: 0 auto 0;                                                  
+	position: absolute;                                                 
+	bottom: 0;                                                          
+	width: 100%;                                                        
+}                                                                           
+                                                                            
+#bullets > div {                                                            
+	background: url("../images/bullet.png") no-repeat;                  
+	cursor: pointer;                                                    
+	float: left;                                                        
+	height: 14px;                                                       
+	margin: 5px;                                                        
+	width: 14px;                                                        
+}                                                                           
+                                                                            
+#bullets .active {                                                          
+	background: url("../images/bullet_active.png") no-repeat;           
+}                                                                           
