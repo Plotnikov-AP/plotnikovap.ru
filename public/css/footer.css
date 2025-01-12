@@ -39,7 +39,7 @@
 }
 
 .statistics_show:hover {
-    height: 30vh;
+    height: 25vh;
     width: 30vw;
     opacity: 1;
     cursor: pointer;

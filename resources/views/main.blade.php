@@ -3,6 +3,7 @@
     <x-slot name="content">
         <x-my-header />
         <x-my-slider />
+        <x-my-about-author />
         <x-my-footer /> 
     </x-slot>
 </x-main-layout>
