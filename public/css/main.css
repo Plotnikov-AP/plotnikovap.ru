@@ -127,3 +127,36 @@ body {
     list-style: disc;
     margin-left: 5%;
 }
+
+.contacts {
+	font-size: 170%;   
+	color: red;
+    text-align: justify;
+    font-weight: 900;
+}
+
+.contacts p {
+    margin: 0 30px;
+    font-family: FuturaNowScript-Bd;
+}
+
+.contacts img {
+    margin: 0 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.margin_left_10proc {
+    margin-left: 10%;
+}
+
+.mail {
+    display: flex;
+}
+
+.telegram {
+    margin-top: 20px;
+    display: flex;
+}
+
+

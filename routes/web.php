@@ -19,6 +19,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 Route::get('/main', [MainController::class, 'main'])->name('main');
+Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
 Route::post('/language-switch', [MainController::class, 'languageSwitch'])->name('language.switch');
 
 

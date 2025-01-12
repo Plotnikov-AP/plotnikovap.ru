@@ -12,7 +12,11 @@ class MainController extends Controller
     public function main() {                         
         CounterController::setAllCount();            
         return view('main');
-    } 
+    }
+
+    public function contacts() {
+        return view('contacts');
+    }
 
     public function languageSwitch(Request $request) {
         //get the language from the form

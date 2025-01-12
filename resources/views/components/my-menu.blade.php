@@ -14,7 +14,7 @@
                 <a href="#">{{ __('menu.shop') }}</a>                   
             </li>
             <li>                                                                         
-                <a href="#">{{ __('menu.contacts') }}</a>                   
+                <a href="{{ route('contacts') }}"">{{ __('menu.contacts') }}</a>                   
             </li>                                                                       
         </ul>
     </nav>
