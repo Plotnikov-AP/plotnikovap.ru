@@ -26,4 +26,8 @@ class MainController extends Controller
         //return on page
         return redirect()->back();
     }
+
+    public function pageInWork() {
+        return view('my-page-in-work');
+    }
 }

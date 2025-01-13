@@ -21,6 +21,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/main', [MainController::class, 'main'])->name('main');
 Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
 Route::post('/language-switch', [MainController::class, 'languageSwitch'])->name('language.switch');
+Route::get('/page-in-work', [MainController::class, 'pageInWork'])->name('page.in.work');
 
 
 require __DIR__.'/auth.php';

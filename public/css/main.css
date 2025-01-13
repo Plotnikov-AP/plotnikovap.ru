@@ -157,4 +157,13 @@ body {
     display: flex;
 }
 
+.pageInWork {
+	font-size: 300%;
+	font-weight: bold;
+	font-style: italic;
+	color:crimson;
+	text-align: center;
+	margin: 15% 0;
+}
+
 

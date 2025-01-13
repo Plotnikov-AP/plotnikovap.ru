@@ -2,5 +2,6 @@
 
 return [
     'languageSelect' => 'Выберите язык сайта: ',
-    'statistics' => 'статистика'
+    'statistics' => 'статистика',
+    'page_in_work' => 'Страница сейчас дорабатывается'
 ];
