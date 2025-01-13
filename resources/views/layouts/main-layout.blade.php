@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />     
+    <meta name="description" content="Сайт-визитка Плотникова Александра" /> 
+    <meta name="keywords" content="plotnikov, plotnikovap, Плотников, Плотников Александр" />
+
     <link type="text/css" rel="stylesheet" href="{{ asset('/css/main.css') }}" />
     <!-- Scripts -->                                                 
     <script src="{{ asset('/js/jquery.js') }}"></script>             
@@ -12,6 +15,8 @@
     <title>{{ $title }}</title>
 </head>
 <body onload="onloadd()";>
+    <x-my-header />
     {{ $content }}
+    <x-my-footer /> 
 </body>
 </html>

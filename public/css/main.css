@@ -14,9 +14,8 @@ body {
 #slider {                                                                   
 	background-color: #b4d9e9;                                          
 	color: brown;                                                     
-	padding: 1vw 0 1vw;                                               
+	padding: 1% 0 1%;                                               
 	position: relative;                                                  
-	width: 100vw;                                                        
 	height: 35vh;
     text-align:justify;                                                       
 }                                                                           
@@ -28,7 +27,7 @@ body {
                                                                             
 #slider img {                                                               
 	float: left;
-	width: 30vw;                                                       
+	width: 30%;                                                       
 }                                                                           
                                                                             
 #slider .more {                                                             
@@ -57,8 +56,8 @@ body {
                                                                             
 .slider_content {                                                           
 	font-size: 150%;                                                    
-	margin-left: 33vw;                                                 
-	margin-right: 3vw;                                                 
+	margin-left: 33%;                                                 
+	margin-right: 3%;                                                 
 	padding-top: 10px;                                                  
 }                                                                           
                                                                             
@@ -87,12 +86,12 @@ body {
 	justify-content: center;                                            
 	-ms-flex-wrap: wrap;                                                
 	flex-wrap: wrap;                                                    
-	margin: 0 15px;                                                     
+	margin: 0 auto;                                                     
 	text-align: center;                                                 
 	padding: 0 auto 0;                                                  
 	position: absolute;                                                 
-	bottom: 0;                                                          
-	width: 100%;                                                        
+	bottom: 0;
+    width: 100%;                                                          
 }                                                                           
                                                                             
 #bullets > div {                                                            
@@ -121,6 +120,7 @@ body {
     color: red;
     text-align: center;
     font-weight: 900;
+    text-decoration: underline;
 }
 
 .author li {
@@ -142,8 +142,6 @@ body {
 
 .contacts img {
     margin: 0 20px;
-    height: 40px;
-    width: 40px;
 }
 
 .margin_left_10proc {
