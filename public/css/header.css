@@ -51,17 +51,18 @@
 }
 
 #menu ul li a {
-    background: linear-gradient(180deg, #6f5cec, #150698);
+    background: linear-gradient(180deg, #9d97c3, #150698);
+    background-origin: border-box;
+    border: 4px solid transparent;
     border-radius: 15px;
     font-size: 120%;
     cursor: pointer;
     margin: 8px 20px;
     padding: 0 20px;
     text-decoration: none;
-    border: 5px solid transparent;
 }
 
 #menu ul li a:hover {
-    background: linear-gradient(180deg, #150698, #6f5cec);
+    background: linear-gradient(180deg, #150698, #9d97c3);
     border-color: #ca910d;
 }
