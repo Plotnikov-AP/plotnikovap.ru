@@ -39,13 +39,14 @@ $(document).ready(function() {
 		showSlide();
 	}
 
-	$('.menu a').each(function () { 
+	$('#menu ul li a').each(function () { 
 		var location = window.location.href;
-		console.log(location);
+		// console.log(location);
 		var link = this.href;
-		console.log(link);
-		if ((location.includes(link))) { 
-			$(this).addClass('menuactive');
+		// console.log(link);
+		if ((location.includes(link))) {
+			$(this).css("background", "linear-gradient(180deg, #ADFF2F, #006400)");
+			$(this).css("background-origin", "border-box");
 		}
 	});
 	
