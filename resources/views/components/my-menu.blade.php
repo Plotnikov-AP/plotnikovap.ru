@@ -5,7 +5,7 @@
                 <a href="{{ route('main') }}">{{ __('menu.main') }}</a>                            
             </li>                                                         
             <li>                                                                         
-                <a href="{{ route('page.in.work') }}">{{ __('menu.pyatnashki') }}</a>                            
+                <a href="{{ route('pyatnashki') }}">{{ __('menu.pyatnashki') }}</a>                            
             </li>
             <li>                                                                         
                 <a href="{{ route('page.in.work') }}">{{ __('menu.chat') }}</a>                            

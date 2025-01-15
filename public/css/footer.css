@@ -12,9 +12,9 @@
     position:fixed;
     bottom:0;
     right:0;
-    height: 5vh;
-    width: 15vw;
-    padding: 0 3vw;
+    height: 5%;
+    width: 15%;
+    padding: 3px 3%;
     background-color: rgb(239, 160, 55);
     border-radius: 10px;
     opacity: 1;
@@ -28,8 +28,8 @@
     position:fixed;
     bottom:0;
     right:0;
-    height: 5vh;
-    width: 15vw;
+    height: 5%;
+    width: 15%;
     padding: 20px;
     background-color:  rgb(239, 160, 55);
     border-radius: 10px;
@@ -39,8 +39,8 @@
 }
 
 .statistics_show:hover {
-    height: 25vh;
-    width: 30vw;
+    height: 25%;
+    width: 30%;
     opacity: 1;
     cursor: pointer;
 }

@@ -14,6 +14,10 @@ class MainController extends Controller
         return view('main');
     }
 
+    public function pyatnashki() {
+        return view('pyatnashki');
+    }
+
     public function contacts() {
         return view('contacts');
     }
