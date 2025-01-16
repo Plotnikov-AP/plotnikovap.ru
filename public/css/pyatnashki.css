@@ -36,7 +36,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: #FF4500;
+    color:blue;
+    font-weight: bold;
 }
 
 .null {
