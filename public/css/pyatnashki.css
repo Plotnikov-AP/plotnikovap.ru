@@ -2,8 +2,8 @@
     width: 400px;
     height: 450px;
     margin: 0 auto 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
@@ -16,7 +16,7 @@
     font-size: 26px;
     font-weight: 600;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .pyatnashki_title span {
