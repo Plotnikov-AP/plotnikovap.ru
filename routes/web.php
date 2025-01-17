@@ -23,6 +23,7 @@ Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
 Route::get('/pyatnashki', [MainController::class, 'pyatnashki'])->name('pyatnashki');
 Route::post('/language-switch', [MainController::class, 'languageSwitch'])->name('language.switch');
 Route::get('/page-in-work', [MainController::class, 'pageInWork'])->name('page.in.work');
+Route::get('/page404', [MainController::class, 'page404'])->name('page404');
 
 
 require __DIR__.'/auth.php';

@@ -22,6 +22,10 @@ class MainController extends Controller
         return view('contacts');
     }
 
+    public function page404() {
+        return view('my-page404');
+    }
+
     public function languageSwitch(Request $request) {
         //get the language from the form
         $language=$request->input(key:'language');
