@@ -9,7 +9,7 @@
     <script src="{{ asset('/js/jquery.js') }}"></script>             
     <script src="{{ asset('/js/sweetalert2.all.min.js') }}"></script>
     <script src="{{ asset('/js/functions.js') }}"></script> 
-    <script src="{{ asset('/js/myjs.js') }}"></script>               
+    <script src="{{ asset('/js/js.js') }}"></script>               
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>{{ $title }}</title>
 </head>
