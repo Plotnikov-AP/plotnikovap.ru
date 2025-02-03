@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Session;
 
 class RegisteredUserController extends Controller
 {
@@ -19,6 +20,7 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
+        Session::put('url.intended', url()->previous());
         return view('my-register');
     }
 
@@ -45,6 +47,7 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return back();
+        $intendedUrl = Session::pull('url.intended', '/');
+        return redirect($intendedUrl);
     }
 }
