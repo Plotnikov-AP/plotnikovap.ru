@@ -157,6 +157,7 @@
 
 .theme-chat .wrap-theme .theme:hover {
     color: #FF4500;
+    text-shadow: 1px 1px 3px #e59cbe;
 }
 
 #modal_form_new_message {                      
