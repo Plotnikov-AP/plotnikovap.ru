@@ -91,9 +91,9 @@ function button_show_modal_form_new_chat() {
 	$('#modal_form_new_chat').show();
 }
 
-function button_show_modal_form_new_comment() {
+function button_show_modal_form_new_message() {
 	// Показываем форму для добавления нового комментария
-	$('#modal_form_new_comment').show();
+	$('#modal_form_new_message').show();
 }
 
 function SaveData(url, token, data) {
@@ -106,10 +106,10 @@ function SaveData(url, token, data) {
 		  data: data,
 		},
 		success:function(response) {
-			// console.log(response);
+			console.log(response);
 		},
 	});
-	// console.log(data);
+	console.log(data);
 	//обновим данные по yes no на странице
 	chat_like_count(data['id_chat']);
 }
@@ -118,21 +118,21 @@ function chat_like_count(id_chat)
 {
 	//делаем запрос к БД
 	$.ajax({                         
-	url: dop_url+"/api/chats/like/count/"+id_chat,                       
+	url: dop_url+"/api/chat/like/count/"+id_chat,                       
 	method: 'POST',
 	async: false,
 	}).done(function(data) {
 		if (!!data) {
-			$('#chat_like_yes').text(data[0]);
-			$('#chat_like_no').text(data[1]);
+			$('#chat_'+id_chat+'_like_yes').text(data[0]);
+			$('#chat_'+id_chat+'_like_no').text(data[1]);
 		} else {
-			$('#chat_like_yes').text('не найдено');
-			$('#chat_like_no').text('не найдено');
+			$('#chat_'+id_chat+'_like_yes').text('не найдено');
+			$('#chat_'+id_chat+'_like_no').text('не найдено');
 		}
 	});
 }
 
-function SaveDataForComments(url, token, data) {
+function SaveDataForMessages(url, token, data) {
 	$.ajax({
 		url: url,
 		type: "POST",
@@ -147,24 +147,24 @@ function SaveDataForComments(url, token, data) {
 	});
 	// console.log(data);
 	//обновим данные по yes no на странице
-	comment_like_count(data['id_comment']);
+	message_like_count(data['id_message']);
 }
 
-function comment_like_count(id_comment)
+function message_like_count(id_message)
 {
 	//делаем запрос к БД
 	$.ajax({                         
-	url: dop_url+"/api/comments/like/count/"+id_comment,                       
+	url: dop_url+"/api/message/like/count/"+id_message,                       
 	method: 'POST',
 	async: false,
 	}).done(function(data) {
 		if (!!data) {
-			console.log('#comment'+id_comment+'_like_yes');
-			$('#comment'+id_comment+'_like_yes').text(data[0]);
-			$('#comment'+id_comment+'_like_no').text(data[1]);
+			// console.log('#message_'+id_message+'_like_yes');
+			$('#message_'+id_message+'_like_yes').text(data[0]);
+			$('#message_'+id_message+'_like_no').text(data[1]);
 		} else {
-			$('#comment'+id_comment+'_like_yes').text('не найдено');
-			$('#comment'+id_comment+'_like_no').text('не найдено');
+			$('#message_'+id_message+'_like_yes').text('не найдено');
+			$('#message_'+id_message+'_like_no').text('не найдено');
 		}
 	});
 }

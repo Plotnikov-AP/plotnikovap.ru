@@ -30,7 +30,8 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
         $intendedUrl = Session::pull('url.intended', '/');
-        return redirect($intendedUrl);
+        if ($intendedUrl) return redirect($intendedUrl);
+        return redirect('main');
     }
 
     /**

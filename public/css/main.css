@@ -2,8 +2,9 @@
 @import url("reset.css");
 @import url("header.css");
 @import url("main.css");
-@import url("footer.css");
+@import url("chats.css");
 @import url("pyatnashki.css");
+@import url("footer.css");
 
 body {
     padding: 0;
@@ -186,4 +187,39 @@ body {
 .error a:hover {
 	font-size: 100%;
 }
+
+.modal_close {                     
+	position: absolute;        
+    right: -35px;                  
+    top: -35px;                    
+	/* float: right; */        
+	font-size: 40px;           
+}                                  
+                                   
+.modal_close:hover {               
+	color: #4a0ee2;            
+	text-decoration: underline;
+	cursor:pointer;            
+}
+
+.wrap-space-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrap-right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.wrap-left {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.wrap-center {
+	display: flex;
+	justify-content: center;
+}
+
 

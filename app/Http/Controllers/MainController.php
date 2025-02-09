@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use App\Models\Slider;
 
-
 class MainController extends Controller
 {
     public function main() {                         
@@ -38,4 +37,5 @@ class MainController extends Controller
     public function pageInWork() {
         return view('my-page-in-work');
     }
+
 }

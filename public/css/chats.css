@@ -1,0 +1,215 @@
+/* CHAT */
+
+.chats .wrap {
+    display: flex;
+}
+
+.chats .h2 {
+	font-size: 30px;   
+	font-weight:700;   
+	font-style: italic;
+	color: #ff007b;
+    text-align: center;
+    text-shadow: 1px 1px 1px #c91414; /* размещаем текстовую тень*/
+    align-content:center;
+}
+
+.chats .h3 {
+	font-size: 25px;   
+	font-weight:500;   
+	font-style: italic;
+	color: #ff007b;
+    text-align: center;
+}
+
+.chats label {
+    display: block;                
+	font-size: 20px;
+    justify-content: center;
+    padding: 0 5px;
+    margin: auto 0;   
+	color: #ff007b;
+}          
+
+#modal_form_new_chat {                      
+	display: none;                      
+	position:fixed;                     
+	width: 50%;                         
+	height: 50%;                        
+	top:25%;                            
+	left:25%;                           
+	z-index: 1;                         
+	background-color:rgb(138, 157, 235);
+	font-size: 30px;                    
+	text-align: center;                 
+	justify-content: center;
+    border-radius: 15px;           
+}
+
+#modal_form_new_chat textarea {
+    width: 90%;
+    min-height: 20vh;
+}
+
+.button_chat {                                  
+	display: inline-flex;                   
+    margin: 10px;                               
+    text-decoration: none;                      
+    border: 2px solid #BFE2FF;
+    border-radius: 10px;                  
+    position: relative;                         
+    overflow: hidden;                           
+    font-size: 12px;                            
+    line-height: 20px;                          
+    padding: 12px 30px;                         
+    color: #FFF;                                
+    font-weight: bold;                          
+    text-transform: uppercase;                  
+    font-family: TimesNewRoman;  
+    background: #337AB7;                        
+    cursor: pointer; 
+    transition-duration: 0.2s;
+    white-space: nowrap;
+}
+
+.button_chat:hover {
+    box-shadow: 0 0 15px rgba(235, 46, 46, 0.5); /* Горизонтальное смещение, вертикальное смещение, размытие и цвет*/
+}
+
+.switch-btn {                                                                
+	display: inline-block;                                               
+	width: 72px; /* ширина */                                            
+	height: 38px; /* высота */                                           
+	border-radius: 19px; /* радиус скругления */                         
+	background: #bfbfbf; /* цвет фона */                                 
+	z-index: 0;                                                          
+    margin: auto 0;
+	border: none;                                                        
+	cursor: pointer;                                                     
+	position: relative;                                                  
+	transition-duration: 300ms; /* анимация */                           
+}
+
+.switch-btn::after {                                                       
+	content: "";                                                         
+	height: 32px; /* высота кнопки */                                    
+	width: 32px; /* ширина кнопки */                                     
+	border-radius: 17px;                                                 
+	background: #fff; /* цвет кнопки */                                  
+	top: 3px; /* положение кнопки по вертикали относительно основы */    
+	left: 3px; /* положение кнопки по горизонтали относительно основы */ 
+	transition-duration: 300ms; /* анимация */                           
+	position: absolute;                                                  
+	z-index: 1;                                                          
+}
+
+.switch-on {                                                               
+    background: #118c4e;                                                 
+}                                                                          
+.switch-on::after {                                                        
+	left: 37px;                                                          
+}
+
+.theme-chat {
+    border: 3px solid blue;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(235, 46, 46, 0.5);
+    margin-top: 15px;
+}
+
+.theme-chat .wrap {
+    display: flex;
+    justify-content: right;
+    
+}
+
+.theme-chat .data {
+    align-content:center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #118c4e;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+.theme-chat .wrap span {
+    margin: auto 0;
+}
+
+.theme-chat .wrap img {
+    padding-left: 15px;
+}
+
+.theme-chat .wrap-theme {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.theme-chat .wrap-theme .theme {
+    font-size: 30px;
+    color: #A52A2A;
+    padding: 10px auto;
+    margin: 0 auto;
+    font-weight: bold;
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+.theme-chat .wrap-theme .theme:hover {
+    color: #4c0f8d;
+}
+
+#modal_form_new_message {                      
+	display: none;                      
+	position:fixed;                     
+	width: 50%;                         
+	height: 50%;                        
+	top:25%;                            
+	left:25%;                           
+	z-index: 1;                         
+	background-color:rgb(138, 157, 235);
+	font-size: 30px;                    
+	text-align: center;                 
+	justify-content: center;
+    border-radius: 15px;           
+}
+
+#modal_form_new_message textarea {
+    width: 90%;
+    min-height: 20vh;
+}
+
+#modal_form_new_message label {
+	font-size: 25px;
+	color: #ff007b;
+    font-family: TimesNewRoman;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.message {
+    border: 3px solid blue;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(235, 46, 46, 0.5);
+    margin-top: 15px;
+}
+
+.message .data {
+    align-content:center;
+    font-size: 18px;
+    border: 1px solid #118c4e;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+.message img {
+    padding-left: 15px;
+}
+
+.message .message_content {
+    font-size: 20px;
+    color: #A52A2A;
+    padding: 5px 15px;
+}
+
+
